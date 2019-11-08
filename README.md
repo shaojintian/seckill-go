@@ -2,7 +2,7 @@
 > 这是基于Go语言的一个秒杀系统，这个系统分三层，接入层、逻辑层、管理层。
 
 ##### 系统架构图
-![image](https://github.com/shaojintian/seckill/tree/master/framework.png)
+![image](https://github.com/shaojintian/seckill-go/blob/master/static/picture/framework.png)
 
 ##### 秒杀接入层
 1. 从Etcd中加载秒杀活动数据到内存当中。
@@ -33,47 +33,12 @@
 
 ##### 目录结构
 ```
-├─sk_admin
-│  ├─config
-│  ├─controller
-│  │  ├─activity
-│  │  └─product
-│  ├─model
-│  ├─service
-│  └─setup
-├─sk_layer
-│  ├─config
-│  ├─logic
-│  ├─service
-│  │  ├─srv_err
-│  │  ├─srv_limit
-│  │  ├─srv_product
-│  │  ├─srv_redis
-│  │  └─srv_user
-│  └─setup
-├─sk_proxy
-│  ├─config
-│  ├─controller
-│  ├─service
-│  │  ├─srv_err
-│  │  ├─srv_limit
-│  │  ├─srv_redis
-│  │  └─srv_sec
-│  └─setup
-└─vendor
-    └─github.com
-        ├─coreos
-        │  └─etcd
-        │      └─clientv3
-        ├─gin-gonic
-        │  └─gin
-        ├─go-sql-driver
-        │  └─mysql
-        ├─gohouse
-        │  └─gorose
-        ├─spf13
-        │  ├─cobra
-        │  └─viper
-        └─Unknwon
-            └─com
+├── README.md
+├── /doc/
+├── filetree.txt
+├── go.mod
+├── /src/
+├── /static/
+│  ├── /picture/
+│  │  └── framework.png
 ```
